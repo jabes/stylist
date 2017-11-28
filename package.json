@@ -1,7 +1,12 @@
 {
   "name": "stylist-css",
   "description": "A collection of stylus functions and mixins to build web applications.",
-  "keywords": ["stylus", "css", "grid", "layout"],
+  "keywords": [
+    "stylus",
+    "css",
+    "grid",
+    "layout"
+  ],
   "version": "1.0.0",
   "license": "MIT",
   "author": "Justin Bull <bull.justin@gmail.com>",
