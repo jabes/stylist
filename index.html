@@ -26,11 +26,17 @@
       height: 100px;
       line-height: 100px;
     }
+    .box-container {
+      height: 200px;
+    }
+    .box-container-big {
+      height: 400px;
+    }
   </style>
 </head>
-<body class="height-100 bg-grey-lighter">
+<body class="bg-grey-lighter">
 
-  <div class="container bg-white height-100">
+  <main class="container bg-white">
 
     <header class="color-brand padding-top-200 padding-bottom-200">
       <svg xmlns="http://www.w3.org/2000/svg" width="31.73" height="31.73" viewBox="0 0 31.73 31.73">
@@ -38,6 +44,25 @@
       </svg>
       <h1 class="inline font-size-100">Stylist</h1>
     </header>
+
+    <section>
+
+      <h2 class="font-size-40 color-grey-dark border-bottom-1">Visibility</h2>
+
+      <div class="row no-gutter">
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xs opacity-20">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xs">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-sm opacity-20">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-sm">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-md opacity-20">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-md">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-lg opacity-20">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-lg">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xl opacity-20">extra large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xl">extra large</div>
+      </div>
+
+    </section>
 
     <section>
 
@@ -73,28 +98,188 @@
         <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">12</div>
       </div>
 
-    </section>
-
-    <section>
-
-      <h2 class="font-size-40 color-grey-dark border-bottom-1">Visibility</h2>
-
       <div class="row no-gutter">
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xs opacity-20">extra-small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xs">extra-small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-sm opacity-20">small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-sm">small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-md opacity-20">medium</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-md">medium</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-lg opacity-20">large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-lg">large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xl opacity-20">extra large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xl">extra large</div>
+        <div class="box col-xs-12 col-md-4 col-xs-last border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">last</div>
+        <div class="box col-xs-12 col-md-4 col-xs-first border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">first</div>
+        <div class="box col-xs-12 col-md-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">middle</div>
       </div>
 
     </section>
 
-  </div>
+    <section>
+
+      <h2 class="font-size-40 color-grey-dark border-bottom-1">Flexible Boxes</h2>
+
+      <div class="flex">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">flex-none</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-auto">flex-auto</div>
+      </div>
+
+      <div class="flex flex-row-reverse">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">flex-none</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-auto">flex-auto</div>
+      </div>
+
+      <h3 class="font-size-30 color-grey text-center">Justify Content</h3>
+
+      <div class="flex justify-start">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-start</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-start</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-start</div>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-end</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-end</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-end</div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-center</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-center</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-center</div>
+      </div>
+
+      <div class="flex justify-between">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-between</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-between</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-between</div>
+      </div>
+
+      <div class="flex justify-around">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-around</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-around</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-around</div>
+      </div>
+
+      <div class="flex justify-evenly">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-evenly</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-evenly</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">justify-evenly</div>
+      </div>
+
+      <h3 class="font-size-30 color-grey text-center">Align Items</h3>
+
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-start">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-start</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-start</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-start</div>
+      </div>
+
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-center">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-center</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-center</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-center</div>
+      </div>
+
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-end">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-end</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-end</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-end</div>
+      </div>
+
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-stretch">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none">items-stretch</div>
+      </div>
+
+      <h3 class="font-size-30 color-grey text-center">Align Self</h3>
+
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-start">self-start</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-center">self-center</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-end">self-end</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-stretch">self-stretch</div>
+      </div>
+
+      <h3 class="font-size-30 color-grey text-center">Align Content</h3>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-start">
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-start</div>
+      </div>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-center">
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-center</div>
+      </div>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-end">
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-end</div>
+      </div>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-around">
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-around</div>
+      </div>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-between">
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+        <div class="box padding-left-200 padding-right-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-between</div>
+      </div>
+
+      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-stretch">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-auto">content-stretch</div>
+      </div>
+
+    </section>
+
+    <footer class="flex justify-center padding-500">
+      <img src="cupcake.png" alt="cupcake">
+    </footer>
+
+  </main>
 
 </body>
 </html>

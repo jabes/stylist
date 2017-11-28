@@ -43,7 +43,7 @@ html
         padding-right ($grid-gutter / 2)
 
 col($media-size = null)
-  $col-shared-selector = ($media-size != null) ? '.col-%s' % $media-size:'.col'
+  $col-shared-selector = ($media-size != null) ? '.col-%s' % $media-size : '.col'
   {$col-shared-selector}
     flex none
     position relative
@@ -51,15 +51,15 @@ col($media-size = null)
     // This works because we use flex values later on to override this initial width.
     width 100%
     min-height 1px
-  $first-selector = ($media-size != null) ? '.first-%s' % $media-size:'.first'
+  $first-selector = ($media-size != null) ? '.col-%s-first' % $media-size : '.col-first'
   {$first-selector}
-    order -1
-  $last-selector = ($media-size != null) ? '.last-%s' % $media-size:'.last'
+    order 0
+  $last-selector = ($media-size != null) ? '.col-%s-last' % $media-size : '.col-last'
   {$last-selector}
     order 1
   // Prevent collapsing
   for $i in (1..$grid-columns)
-    $col-size-selector = ($media-size != null) ? '.col-%s-%s' % ($media-size $i):'.col-%s' % $i
+    $col-size-selector = ($media-size != null) ? '.col-%s-%s' % ($media-size $i) : '.col-%s' % $i
     {$col-size-selector}
       @extend {$col-shared-selector}
     {$col-size-selector}
