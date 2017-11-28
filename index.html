@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stylist</title>
+  <meta name="description" content="A collection of stylus functions and mixins to build web applications.">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="stylist.css">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lobster', cursive;
+    }
+    header svg {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      fill: currentColor
+    }
+    .color-brand {
+      color: #9A031E;
+    }
+    .box {
+      height: 100px;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body class="height-100 bg-grey-lighter">
+
+  <div class="container bg-white height-100">
+
+    <header class="color-brand padding-top-200 padding-bottom-200">
+      <svg xmlns="http://www.w3.org/2000/svg" width="31.73" height="31.73" viewBox="0 0 31.73 31.73">
+        <path d="M11.334 17.39c.718.103 2.554-4.214 2.686-4.31.132-.096 2.776.113 2.427-1.295-.795.673-1.168-.056-1.132-.586.036-.532.71-1.66.886-1.583.178.077.483.705 1.12.123-.964.092-.737-1.317-.438-1.486.3-.168 1.463-.682 1.8-1.01s.363-1.357 1.05-1.13c.687.227.18 1.69.385 2.18s2.063 2.063 2.032 2.558c-.032.496-.813.407-.796 1.1 0 .28.487.488.5.815.014.327-.526.573-.526.573s.463.127.373.618c-.09.49-.684.342-.874.444-.09.05.91 1.146.166 1.973-.672.79-4.035-.042-4.682.21-1.217.472-2.225 2.113-1.554 2.89.67.776 2.985 3.28 3.586 5.362 1.03 2.728-1.496 7.49-2.91 4.036-2 1.346 2.183 6.29 8.05-1.15 4.494-6.05 2.296-17.062.968-19.536C23.124 5.714 16.942-2.83 10.308.952 2.056 5.46 5.98 16.367 11.334 17.39z"/>
+      </svg>
+      <h1 class="inline font-size-100">Stylist</h1>
+    </header>
+
+    <section>
+
+      <h2 class="font-size-40 color-grey-dark border-bottom-1">Grid</h2>
+
+      <div class="row no-gutter">
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">1</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">2</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">3</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">4</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">5</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">6</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">7</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">8</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">9</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">10</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">11</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">12</div>
+      </div>
+
+      <div class="row no-gutter reverse">
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">1</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">2</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">3</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">4</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">5</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">6</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">7</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">8</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">9</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">10</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">11</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">12</div>
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2 class="font-size-40 color-grey-dark border-bottom-1">Visibility</h2>
+
+      <div class="row no-gutter">
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xs opacity-20">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xs">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-sm opacity-20">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-sm">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-md opacity-20">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-md">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-lg opacity-20">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-lg">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xl opacity-20">extra large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xl">extra large</div>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>

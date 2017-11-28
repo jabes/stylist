@@ -91,24 +91,59 @@ media-xl-below()
   @media media
     {block}
 
+media-xs-above()
+  size = $media-size-xs + em-calc(1px)
+  media = 'screen and (min-width: %s)' % size
+  @media media
+    {block}
+
+media-sm-above()
+  size = $media-size-sm + em-calc(1px)
+  media = 'screen and (min-width: %s)' % size
+  @media media
+    {block}
+
+media-md-above()
+  size = $media-size-md + em-calc(1px)
+  media = 'screen and (min-width: %s)' % size
+  @media media
+    {block}
+
+media-lg-above()
+  size = $media-size-lg + em-calc(1px)
+  media = 'screen and (min-width: %s)' % size
+  @media media
+    {block}
+
+media-xl-above()
+  size = $media-size-xl + em-calc(1px)
+  media = 'screen and (min-width: %s)' % size
+  @media media
+    {block}
+
 media-xs()
-  @media $media-size-xs-min-query
+  media = 'screen and (min-width: %s)' % $media-size-xs-min
+  @media media
     {block}
 
 media-sm()
-  @media $media-size-sm-min-query
+  media = 'screen and (min-width: %s)' % $media-size-sm-min
+  @media media
     {block}
 
 media-md()
-  @media $media-size-md-min-query
+  media = 'screen and (min-width: %s)' % $media-size-md-min
+  @media media
     {block}
 
 media-lg()
-  @media $media-size-lg-min-query
+  media = 'screen and (min-width: %s)' % $media-size-lg-min
+  @media media
     {block}
 
 media-xl()
-  @media $media-size-xl-min-query
+  media = 'screen and (min-width: %s)' % $media-size-xl-min
+  @media media
     {block}
 
 media-portrait()

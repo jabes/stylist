@@ -68,3 +68,17 @@ for $i in 0..10
   $value = convert-unit($i, 'px')
   .border-radius-{$i}
     border-radius $value
+
+for $i in 0..10
+  $width = convert-unit($i, 'px')
+  $style = solid
+  .border-{$i}
+    border $width $style
+  .border-top-{$i}
+    border-top $width $style
+  .border-bottom-{$i}
+    border-bottom $width $style
+  .border-left-{$i}
+    border-left $width $style
+  .border-right-{$i}
+    border-right $width $style
