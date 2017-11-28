@@ -12,11 +12,11 @@ npm install stylist-css --save
 
 Use a CDN
 
-- [https://unpkg.com/stylist-css@1.0.0/stylist.css](https://unpkg.com/stylist-css@1.0.0/stylist.css)
+- [https://unpkg.com/stylist-css/stylist.css](https://unpkg.com/stylist-css/stylist.css)
 
 ## Example
 
-View [demo](index.html).
+View [demo](https://jabes.github.io/stylist/).
 
 #### Grid
 
