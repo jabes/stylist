@@ -1,0 +1,6 @@
+**/.*
+!.editorconfig
+!.gitignore
+
+node_modules/
+stylist.css
