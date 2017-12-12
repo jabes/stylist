@@ -7,8 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="A collection of stylus functions and mixins to build web applications.">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link rel="stylesheet" href="stylist.css">
@@ -37,10 +36,7 @@
       line-height: 100px;
     }
     .box-container {
-      height: 200px;
-    }
-    .box-container-big {
-      height: 400px;
+      min-height: 200px;
     }
   </style>
 
@@ -61,16 +57,16 @@
       <h2 class="font-size-40 color-grey-dark border-bottom-1">Visibility</h2>
 
       <div class="row no-gutter">
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xs opacity-20">extra-small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xs">extra-small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-sm opacity-20">small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-sm">small</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-md opacity-20">medium</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-md">medium</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-lg opacity-20">large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-lg">large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 hide-xl opacity-20">extra large</div>
-        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 show-xl">extra large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 hide-xs opacity-20">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 show-xs">extra-small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 hide-sm opacity-20">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 show-sm">small</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 hide-md opacity-20">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 show-md">medium</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 hide-lg opacity-20">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 show-lg">large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 hide-xl opacity-20">extra large</div>
+        <div class="box col-xs-12 col-md-6 col-lg-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 show-xl">extra large</div>
       </div>
 
     </section>
@@ -80,39 +76,39 @@
       <h2 class="font-size-40 color-grey-dark border-bottom-1">Grid</h2>
 
       <div class="row no-gutter">
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">1</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">2</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">3</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">4</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">5</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">6</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">7</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">8</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">9</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">10</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">11</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">12</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">1</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">2</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">3</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">4</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">5</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">6</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">7</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">8</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">9</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">10</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">11</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">12</div>
       </div>
 
       <div class="row no-gutter reverse">
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">1</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">2</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">3</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">4</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">5</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">6</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">7</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">8</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">9</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">10</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">11</div>
-        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">12</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">1</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">2</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">3</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">4</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">5</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">6</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">7</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">8</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">9</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">10</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">11</div>
+        <div class="box col-xs-12 col-md-6 col-lg-1 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">12</div>
       </div>
 
       <div class="row no-gutter">
-        <div class="box col-xs-12 col-md-4 col-xs-last border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">last</div>
-        <div class="box col-xs-12 col-md-4 col-xs-first border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">first</div>
-        <div class="box col-xs-12 col-md-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26">middle</div>
+        <div class="box col-xs-12 col-md-4 col-xs-last border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">last</div>
+        <div class="box col-xs-12 col-md-4 col-xs-first border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">first</div>
+        <div class="box col-xs-12 col-md-4 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22">middle</div>
       </div>
 
     </section>
@@ -122,197 +118,106 @@
       <h2 class="font-size-40 color-grey-dark border-bottom-1">Flexible Boxes</h2>
 
       <div class="flex">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">flex-none</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-auto">flex-auto</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 flex-none">flex-none</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 flex-auto">flex-auto</div>
       </div>
 
       <div class="flex flex-row-reverse">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">flex-none</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-auto">flex-auto</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 flex-none">flex-none</div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-22 flex-auto">flex-auto</div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Justify Content</h3>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Flex-Start</span></h3>
 
-      <div class="flex justify-start">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">start</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">start</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">start</div>
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-start overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <div class="flex justify-end">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">end</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">end</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">end</div>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Flex-End</span></h3>
+
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-end overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <div class="flex justify-center">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">center</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">center</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">center</div>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Center</span></h3>
+
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-center overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <div class="flex justify-between">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">between</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">between</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">between</div>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Space-Between</span></h3>
+
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-between overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <div class="flex justify-around">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">around</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">around</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">around</div>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Space-Around</span></h3>
+
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-around overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <div class="flex justify-evenly">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">evenly</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">evenly</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-white text-center font-size-26 flex-none">evenly</div>
+      <h3 class="font-size-30 color-grey-light text-center">Justify Content: <span class="white-space-nowrap color-grey">Space-Evenly</span></h3>
+
+      <div class="bg-grey-lighter margin-bottom-200 flex justify-evenly overflow-hidden">
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Align Items: Start</h3>
+      <h3 class="font-size-30 color-grey-light text-center">Align Items: <span class="white-space-nowrap color-grey">Flex-Start</span></h3>
 
-      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-start">
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-start overflow-hidden">
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Align Items: Center</h3>
+      <h3 class="font-size-30 color-grey-light text-center">Align Items: <span class="white-space-nowrap color-grey">Center</span></h3>
 
-      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-center">
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-center overflow-hidden">
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Align Items: End</h3>
+      <h3 class="font-size-30 color-grey-light text-center">Align Items: <span class="white-space-nowrap color-grey">Flex-End</span></h3>
 
-      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-end">
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-end overflow-hidden">
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Align Items: Stretch</h3>
+      <h3 class="font-size-30 color-grey-light text-center">Align Items: <span class="white-space-nowrap color-grey">Stretch</span></h3>
 
-      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-stretch">
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
-        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none"></div>
+      <div class="box-container bg-grey-lighter margin-bottom-200 flex items-stretch overflow-hidden">
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+        <div class="padding-300 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
       </div>
 
-      <h3 class="font-size-30 color-grey text-center">Align Self</h3>
+    </section>
 
-      <div class="box-container bg-grey-lighter margin-bottom-200 flex">
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-start">start</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-center">center</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-end">end</div>
-        <div class="padding-200 border-1 border-radius-5 bg-grey-dark color-grey-lighter text-center font-size-26 flex-none self-stretch">stretch</div>
-      </div>
+    <section>
 
-      <h3 class="font-size-30 color-grey text-center">Align Content: Start</h3>
+      <h2 class="font-size-40 color-grey-dark border-bottom-1">Columns</h2>
 
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-start">
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-      </div>
-
-      <h3 class="font-size-30 color-grey text-center">Align Content: Center</h3>
-
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-center">
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-      </div>
-
-      <h3 class="font-size-30 color-grey text-center">Align Content: End</h3>
-
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-end">
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="padding-400 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-      </div>
-
-      <h3 class="font-size-30 color-grey text-center">Align Content: Around</h3>
-
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-around">
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-      </div>
-
-      <h3 class="font-size-30 color-grey text-center">Align Content: Between</h3>
-
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-between">
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="box width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-      </div>
-
-      <h3 class="font-size-30 color-grey text-center">Align Content: Stretch</h3>
-
-      <div class="box-container-big bg-grey-lighter margin-bottom-200 flex flex-wrap content-stretch">
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
-        <div class="width-20 border-1 border-radius-5 bg-grey-dark color-grey-lighter flex-none"></div>
+      <div class="column-count-2 column-gap-2">
+        <p class="margin-0 margin-bottom-100">Bacon ipsum dolor amet short ribs shankle turkey ground round chicken turducken porchetta. Pig kielbasa boudin chuck ball tip. Jowl ribeye meatloaf flank leberkas alcatra tail swine ham burgdoggen capicola corned beef boudin. Ham cow burgdoggen pork loin shoulder brisket short ribs pork chop biltong.</p>
+        <p class="margin-0 margin-bottom-100">Sirloin landjaeger hamburger, rump ham hock short ribs tongue cupim salami shank ham. Flank t-bone burgdoggen pancetta tongue pig capicola turkey kevin corned beef meatball alcatra porchetta salami andouille. Flank bacon ribeye tri-tip. Kielbasa turkey cow shoulder filet mignon ham hock pancetta chicken alcatra.</p>
+        <p class="margin-0 margin-bottom-100">Kevin jowl sirloin ribeye pork, drumstick shank ham t-bone shankle pork loin pastrami boudin cow. Brisket ball tip kevin pork belly meatball jowl venison pastrami, biltong turducken ham hock chuck porchetta pancetta beef. Ball tip bacon frankfurter shankle ham. Ground round spare ribs cow salami chicken andouille.</p>
+        <p class="margin-0 margin-bottom-100">Meatloaf pork belly jerky pork ham hock. Buffalo bacon short loin burgdoggen chicken pork chop ham turkey shankle shank chuck. Meatball shankle andouille turkey sausage. Venison turducken pork chop t-bone salami cow. Tail hamburger kevin landjaeger, venison cupim spare ribs shankle spare ribs.</p>
       </div>
 
     </section>
